@@ -32,15 +32,14 @@ require 'SQL.php';
                 <div class="card-body">
                     <h5 class="card-title"><?php echo $article->title ?> </h5>
                     <p class="card-text"><?php echo $article->date ?></p>
-                    <!--            <p class="card-text">--><?php //echo $article->site ?><!--</p>-->
                     <a href="<?php echo $article->site ?>"></a>
                     <p class="card-text"><?php echo $article->id ?></p>
                     <form method="post">
                         <button class="btn btn-danger btn-sm remove" name="delete">Delete</button>
                         <input type="hidden" name="article_id" value="<?php echo $article->id ?>">
                     </form>
-                    <!--                <a href="#" class="btn btn-primary">Go somewhere</a>-->
                 </div>
+
             </div>
 
         <?php endforeach; ?>
